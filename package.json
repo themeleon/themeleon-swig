@@ -6,7 +6,7 @@
     "url": "https://github.com/valeriangalliat/themeleon-swig.git"
   },
   "scripts": {
-    "test": "jshint src"
+    "test": "jshint *.js"
   },
   "dependencies": {
     "ap": "0.*",
