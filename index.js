@@ -15,6 +15,6 @@ module.exports = function (swig) {
     swig: d.srcDest(function (src, dest) {
       var writeIndex = ap([dest], writeFile);
       this.push(renderFile(src, this.ctx).then(writeIndex));
-    });
+    }),
   };
 };
