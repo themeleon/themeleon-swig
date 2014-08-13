@@ -1,4 +1,4 @@
-Themeleon Jade
+Themeleon Swig
 ==============
 
 > [Swig] mixin for [Themeleon].
@@ -34,6 +34,6 @@ themeleon.use('swig', require('swig'));
 
 module.exports = themeleon(__dirname, function (t) {
   // Compile a Swig view as `index.html` in destination directory
-  t.jade('views/index.html.swig', 'index.html');
+  t.swig('views/index.html.swig', 'index.html');
 });
 ```
