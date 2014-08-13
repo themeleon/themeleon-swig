@@ -1,20 +1,37 @@
 {
   "name": "themeleon-swig",
-  "version": "0.2.1",
+  "version": "1.0.0",
+  "description": "Swig mixin for Themeleon.",
+  "license": "Unlicense",
+
+  "author": {
+    "name": "Valérian Galliat",
+    "url": "http://val.codejam.info/"
+  },
+
+  "contributors": [],
+
+  "homepage": "https://github.com/themeleon/themeleon-swig",
+  "bugs": "https://github.com/themeleon/themeleon-swig/issues",
+
   "repository": {
     "type": "git",
-    "url": "https://github.com/valeriangalliat/themeleon-swig.git"
+    "url": "https://github.com/themeleon/themeleon-swig.git"
   },
-  "scripts": {
-    "test": "jshint *.js"
-  },
+
   "dependencies": {
     "ap": "0.*",
     "q": "1.*",
     "swig": "1.*",
-    "themeleon": "0.*"
+    "themeleon": "1.*"
   },
+
   "devDependencies": {
-    "jshint": "2.*"
+    "eslint": "0.*"
+  },
+
+  "scripts": {
+    "lint": "eslint *.js",
+    "test": "$npm_package_scripts_lint"
   }
 }
