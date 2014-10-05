@@ -37,3 +37,27 @@ module.exports = themeleon(__dirname, function (t) {
   t.swig('views/index.html.swig', 'index.html');
 });
 ```
+
+### Using Twig extras
+
+```js
+// Create a local Swig instance instead of altering the globale one
+var swig = new (require('swig').Swig)();
+
+var extras = require('swig-extras'); // Moar filters
+var themeleon = require('themeleon')(); // No change here
+
+// Use some additional filters
+extras.useFilter(swig, 'nl2br');
+extras.useFilter(swig, 'split');
+extras.useFilter(swig, 'trim');
+extras.useFilter(swig, 'groupby');
+
+// Even add your own filters
+swig.setFilter('push', function (arr, val) {
+  return arr.push(val);
+});
+
+// Tell Themeleon to use your own Swig instance
+themeleon.use('swig', swig);
+```
