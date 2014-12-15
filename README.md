@@ -3,6 +3,9 @@ Themeleon Swig
 
 > [Swig] mixin for [Themeleon].
 
+**Warning:** this repository/package is deprecated, template engines
+will be handled by consolidate.js in Themeleon 3.0.
+
 [Swig]: https://paularmstrong.github.io/swig/
 [Themeleon]: https://github.com/themeleon/themeleon
 
